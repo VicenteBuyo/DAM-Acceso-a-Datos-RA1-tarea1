@@ -107,7 +107,7 @@ public class Main {
 
     //Método para serializar a binario
     public static void escribirBinario(Object o){
-        Path salida = Path.of("Salida"); //Definimos la ruta de salida
+        Path salida = Path.of("salida"); //Definimos la ruta de salida
         Path archivoSalida = salida.resolve("cursos.dat"); //Definimos el archivo de salida
 
         System.out.println("=============================");
@@ -139,7 +139,7 @@ public class Main {
 
     //Método para leer el archivo binario guardado anteriormente
     public static void leerBinario(){
-        Path salida = Path.of("Salida"); //Definimos la ruta de entrada
+        Path salida = Path.of("salida"); //Definimos la ruta de entrada
         Path archivoEntrada = salida.resolve("cursos.dat"); //Definimos el archivo de entrada
 
         System.out.println("=============================");
@@ -175,7 +175,7 @@ public class Main {
 
     //Método para serializar con JSON
     public static void escribirJSON(ArrayList<Curso> a){
-        Path salida = Path.of("Salida");
+        Path salida = Path.of("salida");
         Path archivoSalida = salida.resolve("cursos.JSON");
 
         //Comprobamos si la carpeta de salida existe, y sino la creamos
@@ -211,7 +211,7 @@ public class Main {
 
     //Método para leer el archivo JSON
     public static void leerJSON(){
-        Path salida = Path.of("Salida");
+        Path salida = Path.of("salida");
         Path archivoEntrada = salida.resolve("cursos.json");
 
         System.out.println("=============================");
@@ -244,7 +244,7 @@ public class Main {
 
     //Método para serializar el archivo XML
     public static void escribirXML(ArrayList<Curso> a){
-        Path salida = Path.of("Salida");
+        Path salida = Path.of("salida");
         Path archivoSalida = salida.resolve("cursos.xml");
 
         //Comprobamos que la carpeta de salida esté creada
@@ -281,7 +281,7 @@ public class Main {
 
     //Método para leer el XML
     public static void leerXML(){
-        Path salida = Path.of("Salida");
+        Path salida = Path.of("salida");
         Path archivoSalida = salida.resolve("cursos.xml");
 
         System.out.println("=============================");
